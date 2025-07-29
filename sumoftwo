@@ -1,0 +1,10 @@
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+num1 = float(input("enter frist number:"))
+num2 = float(input("enter second number: "))
+sum_result = num1 +num2
+print(f"The sum of {num1} and {num2} is: {sum_result}")
